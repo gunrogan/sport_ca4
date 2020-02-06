@@ -1,11 +1,8 @@
-from sqlalchemy import Table, MetaData, Column, Integer, Binary, BigInteger, DECIMAL, REAL, String, DateTime, Boolean, \
-    ForeignKey, Date, TIME
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, Date, TIME
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine, or_, inspect, JSON
-from sqlalchemy.orm import relationship, backref
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.orm import relationship
 
-from .base_model import BaseTable, EmailType
+from .base_model import BaseTable
 
 Base = declarative_base()
 
